@@ -1,0 +1,138 @@
+$break-point: 850px;
+$body-width-lg: 800px;
+$body-width-sm: 500px;
+$filter-section-width-lg: 500px;
+$filter-section-width-sm: 350px;
+$filter-field-width-lg: 220px;
+$filter-field-width-sm: 350px;
+$celebrity-cards-section-width-lg: 500px;
+$celebrity-cards-section-width-sm: 350px;
+$celebrity-card-width-lg: 470px;
+$celebrity-card-width-sm: 330px;
+
+body {
+  width: $body-width-lg;
+  @media (max-width: $break-point) {
+    width: $body-width-sm;
+  }
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-title-1 {
+  font-size: 50px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.page-title-2 {
+  font-size: 40px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.description {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.reference-link {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.celebrities-view {
+  width: $body-width-lg;
+  @media (max-width: $break-point) {
+    width: $body-width-sm;
+  }
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f2f2f2;
+  border: solid #d1d1d1 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-section {
+  margin-top: 10px;
+  width: $filter-section-width-lg;
+  @media (max-width: $break-point) {
+    width: $filter-section-width-sm;
+  }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.filter {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.filter-label {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.filter-field {
+  width: $filter-field-width-lg;
+  @media (max-width: $break-point) {
+    width: $filter-field-width-sm;
+  }
+  height: 30px;
+  font-size: 15px;
+  border: solid #d1d1d1 1px;
+}
+
+.celebrity-cards-section {
+  width: $celebrity-cards-section-width-lg;
+  @media (max-width: $break-point) {
+    width: $celebrity-cards-section-width-sm;
+  }
+  border: solid #d1d1d1 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+
+.celebrity-card {
+  width: $celebrity-card-width-lg;
+  @media (max-width: $break-point) {
+    width: $celebrity-card-width-sm;
+  }
+  border: solid #d1d1d1 1px;
+}
+
+.celebrity-card-header {
+  background-color: steelblue;
+  text-align: center;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.celebrity-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+.celebrity-card-item {
+  padding: 8px;
+}
